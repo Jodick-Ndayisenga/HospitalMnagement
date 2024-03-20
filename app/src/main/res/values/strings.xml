@@ -12,7 +12,7 @@
     <string name="em">Email</string>
     <string name="fno">Phone Number</string>
     <string name="dob">Date of Birth</string>
-    <string name="pstay">Residence</string>
+    <string name="pstays">Residence</string>
     <string name="pwd">Password</string>
     <string name="cpwd">Confirm Password</string>
 
