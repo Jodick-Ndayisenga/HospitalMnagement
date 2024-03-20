@@ -107,7 +107,7 @@ public class AddPrescription extends AppCompatActivity {
                                                     db.collection("appointments").document(appointment.getId()).set(appointmentData).addOnSuccessListener(new OnSuccessListener<Void>() {
                                                         @Override
                                                         public void onSuccess(Void aVoid) {
-                                                            Toast.makeText(AddPrescription.this, "You have appointments left", Toast.LENGTH_SHORT).show();
+                                                            Toast.makeText(AddPrescription.this, "You have no appointments left", Toast.LENGTH_SHORT).show();
                                                             //startActivity(new Intent(AddPrescription.this, MainActivity.class));
                                                             finish();
                                                         }

@@ -74,13 +74,13 @@ public class AddUser extends AppCompatActivity {
                 db.collection("users").document(App.user.getId()).delete().addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
-                        Toast.makeText(AddUser.this, "User Deleted Successfully", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AddUser.this, "User was Deleted Successfully", Toast.LENGTH_SHORT).show();
                         finish();
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(AddUser.this, "Error while deleting user", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AddUser.this, "Error occured while deleting user", Toast.LENGTH_SHORT).show();
                     }
                 });
             }
