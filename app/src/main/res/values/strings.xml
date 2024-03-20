@@ -2,7 +2,7 @@
     <string name="app_name">Metrocare Clinic</string>
     <string name="header">KIRA HOSPITAL</string>
     <string name="log">Login Here</string>
-    <string name="reg">Register To our Clinic</string>
+    <string name="reg">Register To Our Clinic</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="loginBtn">LOGIN</string>
