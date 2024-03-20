@@ -40,7 +40,7 @@ License
 This project is licensed under the MIT License.
 Support
 
-For any inquiries or assistance, please contact our team at support@example.com.
+For any inquiries or assistance, please contact our team at rajajodick@gmail.com.
 Acknowledgements
 
     Special thanks to all contributors who helped develop and improve this app.
