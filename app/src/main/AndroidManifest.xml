@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MetrocareClinic"
+        tools:targetApi="31">
+        <activity
+            android:name=".MedecineAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".Surgeron"
+            android:exported="false" />
+        <activity
+            android:name=".Physicians"
+            android:exported="false" />
+        <activity
+            android:name=".Cardio"
+            android:exported="false" />
+        <activity
+            android:name=".Nutrition"
+            android:exported="false" />
+        <activity
+            android:name=".Dentist"
+            android:exported="false" />
+        <activity
+            android:name=".ReadMessages"
+            android:exported="false" />
+        <activity
+            android:name=".Medecines"
+            android:exported="false" />
+        <activity
+            android:name=".Blog"
+            android:exported="false" />
+        <activity
+            android:name=".Message"
+            android:exported="false" />
+        <activity
+            android:name=".UserAppointments"
+            android:exported="false" />
+        <activity
+            android:name=".AllDoctors"
+            android:exported="false" />
+        <activity
+            android:name=".AddPrescription"
+            android:exported="false" />
+        <activity
+            android:name=".AddNewAppoint"
+            android:exported="false" />
+        <activity
+            android:name=".AddAppointments"
+            android:exported="false" />
+        <activity
+            android:name=".AppointmentManagement"
+            android:exported="false" />
+        <activity
+            android:name=".Services"
+            android:exported="false" />
+        <activity
+            android:name=".Appointment"
+            android:exported="false" />
+        <activity
+            android:name=".Doctors"
+            android:exported="false" />
+        <activity
+            android:name=".AddNewUser"
+            android:exported="false" />
+        <activity
+            android:name=".PatientView"
+            android:exported="false" />
+        <activity
+            android:name=".AdminView"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".AddUser"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Metrocare Clinic</string>
+    <string name="header">KIRA HOSPITAL</string>
+    <string name="log">Login Here</string>
+    <string name="reg">Register To our Clinic</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="loginBtn">LOGIN</string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
+    <string name="uname">Username</string>
+    <string name="em">Email</string>
+    <string name="fno">Phone Number</string>
+    <string name="dob">Date of Birth</string>
+    <string name="pstay">Residence</string>
+    <string name="pwd">Password</string>
+    <string name="cpwd">Confirm Password</string>
+
+
+    <string name="newUser">New User? Register here</string>
+    <string name="title_activity_add_appointments">AddAppointments</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>

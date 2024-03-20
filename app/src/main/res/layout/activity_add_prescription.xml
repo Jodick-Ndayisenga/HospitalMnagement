@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPrescription">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        app:title="PRESCRIPTION"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="?attr/colorSurface"
+        app:titleCentered="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/patientName"
+        android:layout_below="@id/toolbar"
+        android:layout_margin="20dp"
+        android:background="#BEBFBF"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/patientPres"
+        android:text="PRESCRIPTION:"
+        android:layout_below="@id/patientName"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:minHeight="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginTop="0dp"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
+        android:hint="Write prescription here..."
+        android:id="@+id/phoneLayout"
+        android:layout_below="@id/patientPres">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:minHeight="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/prescription"
+            android:inputType="textMultiLine"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/btnLayout"
+        android:layout_below="@id/phoneLayout"
+        android:layout_margin="20dp"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            app:cornerRadius="4dp"
+            android:textSize="17sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/UpdatePrescriptionBtn"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorRed"
+        android:gravity="center"
+        android:layout_below="@+id/btnLayout"
+        android:layout_marginTop="20dp"
+        android:id="@+id/showPresErrors"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGreen"
+        android:gravity="center"
+        android:layout_below="@+id/showPresErrors"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:id="@+id/showPresSuccess"
+        android:textSize="25sp"/>
+
+</RelativeLayout>

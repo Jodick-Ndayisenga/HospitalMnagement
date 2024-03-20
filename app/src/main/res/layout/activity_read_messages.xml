@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purpleDark"
+    tools:context=".AppointmentManagement">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        app:title="ALL USER MESSAGES"
+        app:titleCentered="true"
+        android:background="#000"
+        app:titleTextColor="@color/colorForHint"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/AllMyMessages"
+        android:layout_below="@id/toolbar"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:gravity="center">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="log out"
+            android:id="@+id/LgoutMessage"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            app:cornerRadius="3dp"
+            android:layout_marginEnd="5dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="go back"
+            android:layout_weight="1"
+            android:id="@+id/letSgoback"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            app:cornerRadius="3dp"/>
+    </LinearLayout>
+</RelativeLayout>

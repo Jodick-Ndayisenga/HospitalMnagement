@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/Widget.Material3.CardView.Elevated"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="10sp"
+    android:layout_margin="10sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170sp"
+        android:padding="18sp"
+        android:background="#1A615A">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/list_item_name"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="5dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:id="@+id/list_item_time"
+                    android:drawableStart="@drawable/time"
+                    android:drawableTint="@color/white"
+                    android:drawablePadding="5dp"
+                    android:layout_marginTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:drawableStart="@drawable/mail"
+                    android:drawableTint="@color/white"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/list_item_email"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:drawableStart="@drawable/metro"
+                    android:drawableTint="@color/white"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/list_item_location"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:gravity="end">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/lgo"
+                    android:drawableTint="@color/white"
+                    android:layout_marginEnd="45dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Metrocare"
+                    android:textColor="@color/colorCard"
+                    android:textStyle="bold"
+                    android:textAlignment="textEnd"
+                    android:layout_marginTop="10dp"
+                    android:textSize="24dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

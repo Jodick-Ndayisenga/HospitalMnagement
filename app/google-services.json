@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "449912769943",
+    "project_id": "metrocare-clinic",
+    "storage_bucket": "metrocare-clinic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449912769943:android:ec079bd7220b54a65248d2",
+        "android_client_info": {
+          "package_name": "com.example.metrocareclinic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA18CrUmr1lgWigGDm9bgKALCBYwaCwq0k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purpleDark"
+    tools:context=".AllDoctors">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        app:title="BEST DOCTORS"
+        app:titleCentered="true"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="?attr/colorSurface"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/myAppointments"
+        android:layout_below="@id/toolbar"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/round_refresh"
+        android:layout_marginEnd="16sp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/refreshAppointments"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentEnd="true"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        app:cornerRadius="3dp"
+        android:layout_margin="10dp"
+        android:text="my appointments"
+        android:id="@+id/myAppointmentsBtn"/>
+
+</RelativeLayout>

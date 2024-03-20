@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purpleDark"
+    tools:context=".UserAppointments">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        app:title="ALL MY APPOINTMENTS"
+        app:titleCentered="true"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="?attr/colorSurface"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/myAppointments"
+        android:layout_below="@id/toolbar"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="320dp"
+    android:textColor="#009688"
+    android:textStyle="bold"
+    android:textAlignment="center"
+    android:textSize="20sp"
+    android:id="@+id/noAppointText"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        app:cornerRadius="3dp"
+        android:layout_margin="10dp"
+        android:text="Log Out"
+        android:id="@+id/logOutBtn"/>
+
+</RelativeLayout>

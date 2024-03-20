@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAppointments">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        app:title="Update | Delete | Appointments"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="?attr/colorSurface"
+        app:titleCentered="true"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginTop="30dp"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
+        android:hint="eg. Full Name"
+        android:id="@+id/fullNameLayout"
+        android:layout_below="@id/toolbar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/DocFullNameInput"
+            android:inputType="textCapSentences"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginTop="30dp"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
+        android:hint="Doc username"
+        android:id="@+id/phoneLayout"
+        android:layout_below="@id/fullNameLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/DocUserNameInput"
+            android:inputType="textCapSentences"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
+        android:id="@+id/bioLayout"
+        android:layout_below="@id/phoneLayout"
+        android:hint="Field of Speciality">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences|textMultiLine"
+            android:id="@+id/ThisDocField"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
+        android:id="@+id/specialities"
+        android:layout_below="@id/bioLayout"
+        android:hint="Days: From Mon-Fri">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences|textMultiLine"
+            android:id="@+id/AppointTimeInput"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
+        android:hint="Awaiting Patients"
+        android:id="@+id/queuedPatients"
+        android:layout_below="@id/specialities">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/QueuedPatientsInput"
+            android:inputType="textCapSentences"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/queuedPatients"
+        android:layout_margin="20dp"
+        android:gravity="center">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:id="@+id/AddAppointBtn"
+            android:layout_marginEnd="5dp"
+            app:cornerRadius="3dp"
+            android:backgroundTint="@color/colorGreen"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            app:cornerRadius="3dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/UpdateAppointBtn"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            app:cornerRadius="3dp"
+            android:layout_marginStart="5dp"
+            android:id="@+id/DeleteAppointBtn"
+            android:backgroundTint="@color/colorRed"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorRed"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/showErrors"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
